@@ -11,9 +11,43 @@ img {border: none;
 /* 변동설정 */
 body {font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;}
+
+/* logo 설정 */
+.logo {background-image: url(../img/Icon/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 90px;
+        text-indent: -9999px;}
+/* gnb 설정 */
+.gnb {}
+.gnb ul {display: flex;}
+.gnb li {}
+.gnb a {padding: 10px 30px;
+        display: block;
+        color: #858585;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*                      미디어커리구간설정                         */
 /*                 768px이상 구간 설정            */
 @media (min-width:768px) {
+
+
+
 
     /* 레이아웃설정 */
 
@@ -23,8 +57,8 @@ body {font-family: 'Nanum Gothic', sans-serif;
     /* box5-1,box5-2의 가로정렬 */
     .box5 {display: flex;}
     .box5-1, .box5-2 {width: 50%;}
-    /* box9-1,box9-2,box9-3의 가로정렬 */
-    .box9 {display: flex;
-        justify-content: space-between;}
-    .box9>div {width: 32%;}
+    /* 박스8의 가로정렬 */
+    .box8>div>div {display: flex;}
+    /* 지도,주소 의 가로정렬 */
+    .box9-2 {display: flex;}
 }
