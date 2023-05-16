@@ -8,6 +8,10 @@ a {text-decoration: none;
     color: #000;}
 img {border: none;
     vertical-align: bottom;}
+    /* body {width: 1440px; margin: 0 auto;} */
+/* body {width: 100%;
+    margin: 0 auto;} */
+
 /* 변동설정 */
 body {font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;}
@@ -16,16 +20,118 @@ body {font-family: 'Nanum Gothic', sans-serif;
 .logo {background-image: url(../img/Icon/logo.png);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 150px;
-        height: 90px;
-        text-indent: -9999px;}
+        width: 175px;
+        height: 49px;
+        text-indent: -9999px;
+        }
 /* gnb 설정 */
 .gnb {}
 .gnb ul {display: flex;}
 .gnb li {}
-.gnb a {padding: 10px 30px;
+.gnb a {padding: 10px 50px;
         display: block;
         color: #858585;}
+
+/* 슬로건 설정 */
+.hero {width: 100%;
+    height: 80vh;
+    overflow: hidden;}
+
+.hero img {width: 100%;
+            height: 100%;
+            background-size: cover;
+            
+            }
+
+/* iconset 설정 */
+.iconSet {width: 100%;
+        height: 150px;
+        display: block;
+        text-align: center;}
+.iconSet ul {display: flex;
+            }
+.iconSet li span  {font-size: 18px;
+                    color: #206512;
+                    font-weight: bold;}
+.lconSet a {} 
+.iconSet .i-img {background-color: #75BF4A;
+                display: block;
+                height: 112px;
+                width: 112px;
+                border-radius: 50%;
+                position: relative;
+                }
+.iconSet img {position: absolute;
+align-items: center;
+text-align: center;}
+
+/* 전시행사포스터 설정 */
+.poster {}
+.posterTxt {font-size: 30px;
+            text-align: center;
+            color: #206512;
+            border-top: solid 2px #206512;
+            border-bottom: solid 2px #206512;
+        padding: 20px;}
+.poster ul {display: flex;}
+.poster li {padding: 102px ;
+            }
+.poster img {width: 277px;
+    height: 393px;
+    border-radius: 0 20px;}
+.poster img:nth-child(1) {align-items: center;}
+
+
+
+
+/* 공지사항,동영상 설정 */
+
+.box6 {}
+.newsTxt, .newsTitle, .noticeTxt, .noticeTitle {display: flex;}
+
+.box6-1 {font-size: 120px;
+        color: #75BF4A;
+        font-weight: bold;
+        opacity: 50%;
+        right: -;}
+.video {background-color: #75BF4A;
+        max-width: 50%;
+        height: 100%;}
+.video ul 
+.video li
+
+.layout {background-color: #206512;
+        max-width: 50%;
+        height: ;
+        justify-content: flex-end;
+        display: contents;}
+/* 슬로건 */
+.slogan {position: relative;}
+.sloganImg {background-image: url(../img/Icon/green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100% ;
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    
+    text-indent: -9999px;
+    }
+.slogan ul {position: absolute;
+            top: 40vh;
+            color: #fff;
+            right: 50%;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            }
+.slogan li {}
+.slogan li:nth-child(1) {font-size: 45px;}
+.slogan li:nth-child(2) {font-size: 25px;
+                        opacity: 80%;}
+
 
 
 
@@ -53,12 +159,10 @@ body {font-family: 'Nanum Gothic', sans-serif;
 
     /* box1,box2의 가로정렬 */
     .boxA {display: flex;
-        justify-content: space-between;}
-    /* box5-1,box5-2의 가로정렬 */
-    .box5 {display: flex;}
-    .box5-1, .box5-2 {width: 50%;}
-    /* 박스8의 가로정렬 */
-    .box8>div>div {display: flex;}
+        justify-content: space-between;
+        align-items: center;}
+    /* 박스5의 가로정렬 */
+    .box6 {;}
     /* 지도,주소 의 가로정렬 */
     .box9-2 {display: flex;}
 }
