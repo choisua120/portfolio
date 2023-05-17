@@ -8,58 +8,66 @@ a {text-decoration: none;
     color: #000;}
 img {border: none;
     vertical-align: bottom;}
-h1, h2, h3, h4, h5, h6 {}
-
+    /* body {width: 1440px; margin: 0 auto;} */
+/* body {width: 100%;
+    margin: 0 auto;} */
 
 /* 변동설정 */
 body {font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;}
-/* header 설정 */
-header {padding: 20px 0;}
+
+
+    /* header설정 */
+    header {padding: 20px 0;}
+
 /* logo 설정 */
 .logo {background-image: url(../img/Icon/logo.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain; 
         width: 175px;
         height: 49px;
         text-indent: -9999px;
         }
 /* gnb 설정 */
 .gnb {}
-.gnb ul {display: flex;}
-.gnb li {padding: 20px 0;}
+.gnb ul {display: flex;
+}
+.gnb li {padding: 20px 0;
+        }
 .gnb li::before {content: '\2022';
                 display: inline-block;
                 font-size: 20px;
                 }
-.gnb li:nth-child(1)::before {color: transparent;}
-.gnb a {display: inline-block;
-        color: #000;
-        padding: 0 40px;}
+                .gnb li:nth-child(1):before {color: transparent
+                    }
+.gnb a {padding:0  40px;
+        display:inline-block;
+        color: #000;}
 
 /* 슬로건 설정 */
 .hero {width: 100%;
     height: 80vh;
-    overflow: hidden;
-    }
+    overflow: hidden;}
 
 .hero img {width: 100%;
-            height: auto;
+            height: 100%;
+            background-size: cover;
+            
             }
 
 /* iconset 설정 */
-.box4 {padding: 30px 0;}
+.box4 {padding: 20px 0;}
 .iconSet {width: 100%;
         height: 150px;
         display: block;
         text-align: center;}
 .iconSet ul {display: flex;
-            justify-content: center;}
-.iconSet li {margin: 0 85px;}
+    justify-content: center;
+            }
+.iconSet li {margin:0  30px;}
 .iconSet li span  {font-size: 18px;
                     color: #206512;
-                    font-weight: bold;
-                margin-bottom: 5px;}
+                    font-weight: bold;}
 .lconSet a {} 
 .iconSet .i-img {background-color: #75BF4A;
                 display: block;
@@ -74,22 +82,19 @@ header {padding: 20px 0;}
             transform: translate(-50%, -50%);}
 
 /* 전시행사포스터 설정 */
-.poster {padding-top: 69px;
-        background-color: #f5f5f5;}
+.poster {}
 .posterTxt {font-size: 30px;
             text-align: center;
             color: #206512;
             border-top: solid 2px #206512;
             border-bottom: solid 2px #206512;
         padding: 20px;}
-.poster ul {display: flex;
-            justify-content: center;}
+.poster ul {display: flex;}
 .poster li {padding: 102px ;
             }
 .poster img {width: 277px;
     height: 393px;
-    border-radius: 0 20px;
-    padding: 100px 0 100px 0;}
+    border-radius: 0 20px;}
 .poster img:nth-child(1) {}
 
 
@@ -98,86 +103,43 @@ header {padding: 20px 0;}
 /* 공지사항,동영상 설정 */
 
 .box6 {width: 100%;
-    height: 900px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    color: #fff;}
+height: 600px;
+background-color: yellow;
+margin-top: 50px;
+margin-bottom: 50px;
+position: relative;
+}
+
 
 .box6-1 {font-size: 120px;
         color: #75BF4A;
         font-weight: bold;
         opacity: 50%;
         position: absolute;
-        top: 30px;
-        right:50px;}
-.box6-2 {}
+        top:0px ;
+        right: 50px;
+       }
 .video {background-color: #75BF4A;
-        width: 500px;
-        height: 600px;
-        margin-right: -50px;
-        right: 47%;
-        top: 90px;
-        position: absolute;
-        z-index: 2;
-        border-radius: 0px 40px 40px 0px;
-        box-shadow: 20px 20px 22px 4px rgba(0, 0, 0, 0.2);}
-.video span {}
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 50%;
+    margin-right: -50px;
+    z-index: 2;
+    }
 .video ul {}
-.video li {}
-.video li a {color: #fff;
-            border: #fff solid 1px;
-            border-radius: 30%;
-            width: 100px;
-            height: 35px;
-            padding: 10px;
-            }
+.video li{}
+
 .layout {background-color: #206512;
-        width: 100%;
-        height: 600px;
+        width: 500px;
+        height: 500px;
         position: absolute;
-        left: 47%;
-        top: 160px;
-        margin-right: -50PX;
+        left: 50%;
+        margin-left: -50px;
+        top: 100px;
         z-index: 1;
-        border-radius: 40px 0px  0px 40px;
-        box-shadow: 20px 20px 22px 4px rgba(0, 0, 0, 0.2);}
-.news {margin-top: 100px;
-    margin-left: 260px;
-        }
-.newsTItle {}
-.newsTItle ul {display: flex;}
-.newsTItle a {}
-.newsTxt {display: flex;
-        border-top: solid 1px #fff;
-        width: fit-content;}
-.newsTxt ul {}
-.newsTxt li {padding: 0 15px ;
-            font-size: 16px;
-            margin-top: 15px;}
-
-
-.notice {margin-top: 100px;
-    margin-left: 260px;}
-.noticeTitle {}
-.noticeTitle a {}
-.noticeTxt {display: flex;
-            border-top: solid 1px #fff ;
-            width: fit-content;
-            }
-.noticeTxt li {padding: 0 15px ;
-            font-size: 16px;
-            margin-top: 15px;}
-
-
-
-
-
-
-
-
-
-
+       
+       }
 /* 슬로건 */
 .slogan {position: relative;}
 .sloganImg {background-image: url(../img/Icon/green.png);
@@ -194,10 +156,10 @@ header {padding: 20px 0;}
 .slogan ul {position: absolute;
             top: 40vh;
             color: #fff;
-            left: 50%;
+            right: 50%;
             font-weight: bold;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            align-items: center;
+            justify-content: center;
             text-align: center;
             }
 .slogan li {}
@@ -208,27 +170,22 @@ header {padding: 20px 0;}
 /* 사진갤러리 */
 .slideImg {width: 100%;
         height: 400px;
-        overflow: hidden;}
+    overflow: hidden;}
 .slideImg ul {display: flex;
-            width: 2170px;
-            margin-left: 50px;}
+width:2170px ;}
 .slideImg li {width: 300px ;
-            height: 400px;
-            margin-right: 10px;}
+    height: 400px;
+                margin-right: 10px;}
+
 .slideImg li a {position: relative;}
 .slideImg li a div {position: absolute;
-                    bottom: 0;
-                    left: 0;}
+bottom: 0;
+left: 0;}
 
-.imgTxt {background-color: rgba(32, 101, 18, 0.5);
-        width: 220px;
-        height: 100px;
-        color: #fff;
-        padding: 10px;}
-.imgTxt em {font-style: normal;
-            font-size: 18px;
-            }
-.imgTxt span {padding-top: 5px;}
+
+
+
+
 
 
 
@@ -250,8 +207,9 @@ header {padding: 20px 0;}
         justify-content: space-between;
         align-items: center;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;}
+    margin-left: auto;
+margin-right: auto}
+
     /* 박스5의 가로정렬 */
     .box6 {}
     /* 지도,주소 의 가로정렬 */
