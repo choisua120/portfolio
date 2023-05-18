@@ -92,11 +92,11 @@ header {padding: 20px 0;}
     padding: 100px 0 100px 0;}
 .poster img:nth-child(1) {}
 
-
+/* 넘기는 아이콘을 어디다 넣어야 할지 모르갯어요 ... */
 
 
 /* 공지사항,동영상 설정 */
-
+/* 동영상 부분 어떻게 해야항지 모르갯어요 ... */
 .box6 {width: 100%;
     height: 900px;
     margin-top: 50px;
@@ -109,11 +109,11 @@ header {padding: 20px 0;}
         font-weight: bold;
         opacity: 50%;
         position: absolute;
-        top: 30px;
-        right:50px;}
+        top: 45px;
+        left: 55%;}
 .box6-2 {}
 .video {background-color: #75BF4A;
-        width: 500px;
+        width: 1000px;
         height: 600px;
         margin-right: -50px;
         right: 47%;
@@ -122,18 +122,35 @@ header {padding: 20px 0;}
         z-index: 2;
         border-radius: 0px 40px 40px 0px;
         box-shadow: 20px 20px 22px 4px rgba(0, 0, 0, 0.2);}
-.video span {}
-.video ul {}
-.video li {}
-.video li a {color: #fff;
-            border: #fff solid 1px;
-            border-radius: 30%;
-            width: 100px;
-            height: 35px;
-            padding: 10px;
+.video div:nth-child(1) {}
+.video span {position: absolute;
+            font-size: 16px;
+            letter-spacing: 0.9em;
+            font-style: normal;
+            line-height: 16px;
+            transform: rotate(-90deg);
+            top: 50%;
             }
+.videoTxt {margin-top: 10%;
+            font-size: 18px;
+            margin-left: 20%;
+            font-weight: bold;
+            }
+.videoTxt em {font-style: normal;
+                font-weight: 500;
+                margin-left:50%;
+                font-size: 14px;}
+.videoTxt a {}
+.videoYoutube {background-color: #8b8b8b;
+            width: 60%;
+            height: 50%;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%);}
+/* 고시공고 텍스트 부분이랑 아이콘 가로정렬이 안돼요 */
 .layout {background-color: #206512;
-        width: 100%;
+        width: 1000px;
         height: 600px;
         position: absolute;
         left: 47%;
@@ -147,7 +164,10 @@ header {padding: 20px 0;}
         }
 .newsTItle {}
 .newsTItle ul {display: flex;}
+.newsTItle li:nth-child(1) {font-size: 18px;
+            font-weight: bold;}
 .newsTItle a {}
+.newsTItle img {background-color: #fff;}
 .newsTxt {display: flex;
         border-top: solid 1px #fff;
         width: fit-content;}
@@ -200,15 +220,37 @@ header {padding: 20px 0;}
             transform: translate(-50%, -50%);
             text-align: center;
             }
-.slogan li {}
+.slogan li {line-height: 1.5;}
 .slogan li:nth-child(1) {font-size: 45px;}
 .slogan li:nth-child(2) {font-size: 25px;
                         opacity: 80%;}
 
 /* 사진갤러리 */
+/* slideTitle 부분 어떻게 올려야 해요?.. 
+position ?? */
+.box8 {width: auto;
+        height: 800px;}
+.slide {position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: ;}
+.slideTitle {width: 270px;
+            height: 800px;
+            position: absolute;
+            background-color: #206512;
+            display: flex;
+            align-items: center;
+            }
+/* 사진 세로축 가운데 정렬이 안돼요 
+transform: translate(-50% -50%);
+            top: 50%;
+            left: 50%;
+            얘네 사용했었어요  */
+
 .slideImg {width: 100%;
         height: 400px;
-        overflow: hidden;}
+        overflow: hidden;
+        }
 .slideImg ul {display: flex;
             width: 2170px;
             margin-left: 50px;}
@@ -224,21 +266,65 @@ header {padding: 20px 0;}
         width: 220px;
         height: 100px;
         color: #fff;
-        padding: 10px;}
-.imgTxt em {font-style: normal;
+        padding: 10px;
+        line-height: 1.5;}
+/* 두번쨰 em이 안움직이고 명령어가 안먹혀요 ... */
+.imgTxt em:nth-child(1) {font-style: normal;
             font-size: 18px;
-            }
-.imgTxt span {padding-top: 5px;}
+                        }
+.imgTxt em:nth-child(2) {font-style: normal;
+                        font-size: 14px;
+                        margin-bottom: 10px;}
 
 /* 지도 설정 */
 .box9 {width: 100%;
         height: 800px;
-        background-color: #206512;}
-.
+        background-color: #206512;
+        position: relative;}
+.box9-1 {}
+.mapTitle {font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            line-height: 70px;
+            padding-top: 70px;
+            padding-bottom: 50px;}
+.mapTitle a {}
+.container {width: 1200px;
+            background-color: aqua;
+            height: 350px;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);}
 
+/* 글자들을 중앙 정렬하고 자간 띄우고 싶은데 안돼요... */
+.map {}
+.contactM {position: absolute;
+        background-color: #fff;
+        left: 50%;
+        height: 350px;
+        width: 600px;
+        top: 0;}
+.contactM p {line-height: 18px;}
+.contactM p:nth-child(1) {font-size: 18px;
+                        }
+.contactM p:nth-child(2) {font-size: 14px;
+                        color: #8b8b8b;}
+.contactM ul {font-size: 16px;
+            }
+.contactM li {}
 
-
-
+/* footer 설정 */
+footer {background-color: #000;
+        color: #8b8b8b;
+        width: 100%;
+        height: 100px;
+        position: relative;}
+footer p {position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);} 
 /*                      미디어커리구간설정                         */
 /*                 768px이상 구간 설정            */
 @media (min-width:768px) {

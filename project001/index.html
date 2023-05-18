@@ -92,10 +92,10 @@
             <!-- 유튜브 -->
             <div class="video">
                 <span>SEOUlFOREST</span>
-                    <div>
+                    <div class="videoTxt">
                         서울숲공원
-                        <a href="https://youtu.be/Zh4qLybSbjQ">유튜브로이동</a>
-                        <a href="https://youtu.be/Zh4qLybSbjQ">화살표 아이콘</a>
+                        <em>유튜브로이동</em>
+                        <a href="https://youtu.be/Zh4qLybSbjQ"><img src="img/Icon/arrow02.png" alt=""></a>
                     </div>
                 <div class="videoYoutube">유튜브영상</div>
             </div>
@@ -192,7 +192,7 @@
                             <img src="img/Icon/gallery001.png" alt="">
                             <div class="imgTxt">
                                 <em>구근정원</em><br>
-                                숲속 튤립길을 테마로 한 가로형 정원
+                                <em>숲속 튤립길을 테마로 한 가로형 정원</em>
                             </div>
                         </a>
                     </li>
@@ -201,8 +201,10 @@
                             <img src="img/Icon/gallery002.png" alt="">
                             <div class="imgTxt">
                                 <em>보행가교</em><br>
-                                서울숲의 공중을 가로질러
-                                바람의 언덕에서 한강공원으로 이어짐
+                                <em>
+                                    서울숲의 공중을 가로질러
+                                    바람의 언덕에서 한강공원으로 이어짐
+                                </em>
                             </div>
                         </a>
                     </li>
@@ -211,8 +213,10 @@
                             <img src="img/Icon/gallery003.png" alt="">
                             <div class="imgTxt">
                                 <em>군마상</em><br>
-                                서울숲이 만들어지기 전,
-                                이곳이 경마장으로 쓰인것을 기념해 제작
+                                <em>
+                                    서울숲이 만들어지기 전,
+                                    이곳이 경마장으로 쓰인것을 기념해 제작
+                                </em>
                             </div>
                         </a>
                     </li>
@@ -221,8 +225,10 @@
                             <img src="img/Icon/gallery004.png" alt="">
                             <div class="imgTxt">
                                 <em>꽃사슴방사장</em><br>
-                                서울숲의 상징이기도 한
-                                꽃사슴을 만날 수 있는 공간
+                                <em>
+                                    서울숲의 상징이기도 한
+                                    꽃사슴을 만날 수 있는 공간
+                                </em>
                             </div>
                         </a>
                     </li>
@@ -231,8 +237,10 @@
                             <img src="img/Icon/gallery005.png" alt="">
                             <div class="imgTxt">
                                 <em>바람의언덕</em><br>
-                                바람의 언덕에 오르면 한강에서 불어오는 시원한 바람을 느끼며
-                                물결치는 억새밭을 감상할 수 있음
+                                <em>
+                                    바람의 언덕에 오르면 한강에서 불어오는 시원한 바람을 느끼며
+                                    물결치는 억새밭을 감상할 수 있음
+                                </em>
                             </div>
                         </a>
                     </li>
@@ -241,8 +249,10 @@
                             <img src="img/Icon/gallery006.png" alt="">
                                 <div class="imgTxt">
                                     <em>곤충식물원</em><br>
-                                    100여종의 열대 식물과
-                                    곤충, 파충류, 양서류 등을 관람할 수 있는 공간
+                                    <em>
+                                        100여종의 열대 식물과
+                                        곤충, 파충류, 양서류 등을 관람할 수 있는 공간
+                                    </em>
                                 </div>
                         </a>
                     </li>
@@ -262,24 +272,49 @@
     <!-- 지도 -->
     <article class="box9">
         <div class="9-1">
-            <h2>서울숲 
-                CONTACT US</h2>
+                <ul class="mapTitle">
+                    <li>서울숲</li>
+                    <li>CONTACT US</li>
+                </ul>
             <a href="#">VIEW DETAIL</a>
         </div>
         <div class="container">
-            <div class="map"></div>
+            <div class="map">
+                <!--
+	* 카카오맵 - 약도서비스
+	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+-->
+<!-- 1. 약도 노드 -->
+<div id="daumRoughmapContainer1684389337632" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1684389337632",
+		"key" : "2eu5g",
+		"mapWidth" : "600",
+		"mapHeight" : "350"
+	}).render();
+</script>
+            </div>
             <div class="contactM">
                 <p>서울 성동구 뚝섬로 273 성수동1가 685-20</p>
                 <p>273, Ttukseom-ro, Seongdong-gu, Seoul, Republic of Korea</p>
                 <ul>
-                    <li>02-460-2905</li>
-                    <li>seoulforest@gmail.com</li>
+                    <li><img src="img/Icon/iconP.png" alt="">02-460-2905</li>
+                    <li><img src="img/Icon/iconM.png" alt="">seoulforest@gmail.com</li>
                 </ul>
             </div>
         </div>
     </article>
     </section>
-    <footer></footer>
+    <footer>
+        <p>copyright &copy; sua.2023.All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
