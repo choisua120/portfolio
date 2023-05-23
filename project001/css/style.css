@@ -144,7 +144,7 @@ header {padding: 20px 0;}
 
 .videoTxt {align-items: center;
         width: 600px;
-        position: absolute;
+        position: absolute; 
         top: 20%;
         left: 50%;
         transform: translate(-50%);
