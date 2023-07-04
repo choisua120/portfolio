@@ -1,0 +1,627 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: bottom;
+}
+/* header 설정 */
+header {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.h-wrap {
+    width: 80%;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 1px #fff;
+
+}
+/* 로고 설정 */
+.h-wrap h1 {
+    text-indent: -999px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 93px;
+    height: 80px;
+    
+}
+/* nav 설정 */
+.h-wrap nav {
+    color: #fff;
+    
+}
+.h-wrap nav ul {
+    display: flex;
+    font-size: 16px;
+    
+}
+.h-wrap nav li {
+    margin-left: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.h-wrap nav li:hover {
+    color: #043673;
+}
+/* 아이콘 설정 */
+.icon {}
+.icon ul {
+    display: flex;
+}
+.icon li {
+    margin-left: 40px;
+}
+/* hero 설정 */
+.hero {
+    position: relative;
+    background-color: #000;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+.hero-wrap{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+/* hero img 설정 */
+.hero-img {
+    display: flex;
+    justify-content: space-around;
+
+}
+.hero-img span:nth-child(1) {
+    background-image: url(../img/h01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 386px;
+    height: 384px;
+} 
+.hero-img span:nth-child(2){
+    background-image: url(../img/h02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 386px;
+    height: 384px;
+
+}
+/* hero txt 설정 */
+.hero ul {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+.hero li {
+    font-size: 160px;
+    text-shadow: 0 0 0 #043673;
+    transition: all 0.4s;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 5000px;
+    
+}
+.hero li.on {
+    text-shadow: 0 20px 0 #043673;
+}
+/* 글씨 위치 선정 */
+.hero li:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 10%;   
+}
+.hero li:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.hero li:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+/* 펀딩 설정 */
+.com-wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.com-inner {
+}
+/* 펀딩 글자 설정 */
+.info-con {
+width: 50%;
+height: 70vh;
+position: absolute;
+top: 50%;
+left: 10%;
+transform: translate(0,-50%);
+}
+.info-con h2 {
+    font-size: 60px;
+    
+}
+.info-con em {
+    color: #043673;
+    font-style: normal;
+}
+.info-con ul {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.info-con li {}
+.info-con h3 {
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 70px;
+    border: solid 1px #043673;
+    border-radius: 20px;
+}
+.info-con h3 a {
+    color: #043673;
+}
+/* 펀딩 사진 설정 */
+.circle_contents {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    left: 80%;
+}
+.circle-line {
+    position: absolute;
+    border: solid 2px #043673;
+    width:900px;
+    height: 900px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+}
+.inline-main_con {
+    position: absolute;
+    background-image: url(../img/lab01.jpg);
+    background-position: center ;
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    top: 50%;
+    right: 70%;
+    transform: translate(0,-50%);
+}
+.inline-con {
+    position: absolute;
+    background-image: url(../img/lab02.jpg);
+    background-position: center left;
+    background-size: cover;
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    top: 10%;
+    right: 60%;
+    transform: translate(0,-50%);
+}
+.inline-point {
+    position: absolute;
+    background-color: #043673;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 90%;
+    right: 58%;
+    transform: translate(0,-50%);
+}
+/* 제품 설정 */
+.product {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-wrap {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+/* 제품 글자 설정 */
+.pro-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.pro-info h4 {
+    font-size: 32px;
+}
+.pro-info ul {
+}
+.pro-info li {
+    font-size: 16px;
+    color: #606060
+}
+.pro-info li:nth-child(1) {
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+/* 제품 배경 글자 설정 */
+.pro-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.pro-txt span {
+    transform: rotate(90deg);
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 480px;
+    font-weight: 800;
+    letter-spacing: 20px;
+    
+}
+/* 제품 사진 설정 */
+.pro-pic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.pro-pic a {
+}
+
+.pro-pic a:nth-child(1)  {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/pro01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 8%;
+    right: 18%;
+    transform: rotate(10deg);
+    z-index: 3;
+}
+.pro-pic a:nth-child(2) {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/pro02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 24%;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+.pro-pic a:nth-child(3) {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/pro03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 40%;
+    right: 18%;
+    transform: rotate(19deg);
+    z-index: 3;
+}
+.pro-pic a:nth-child(4) {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/pro04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 65%;
+    left: 28%;
+    transform: rotate(-15deg);
+    z-index: 3;
+
+}
+/* 제품 더보기 설정 */
+.more-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more-pro a {
+    font-size: 24px;
+}
+.more-pro img {
+}
+/* 동영상설정 */
+.video {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.video video {
+    width: 100%;
+}
+/* 동영상 글자 설정 */
+.more-video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.more-txt { 
+    border: #fff solid 1px;
+    border-radius: 30px;
+    padding: 13px;
+    text-align: center;
+}
+.more-txt a {
+    color: #fff;
+    font-size: 24px;
+}
+.more-txt img {
+    width: 20px;
+    height: 20px;
+}
+/* 사육 정보 설정 */
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.con-wrap {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+/* 사육정보 글자 설정 */
+.main-con {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.main-con span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #043673;
+}
+.main-con h2 {
+    font-size: 35px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-weight: normal;
+}
+.main-con a {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+}
+/* 사육정보 사이드 설정 */
+.side-con {
+    width: 70%;
+    height: 100%;
+    border-bottom: solid 2px #000;
+}
+/* 사이드 글자 설정 */
+.side-txt {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+.side-txt ul {
+    border-top: solid 2px #000;
+}
+.side-txt li {
+    border-bottom: solid 1px #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px;
+}
+.side-txt i {
+    font-style: normal;
+}
+.side-txt span {}
+.side-txt i {}
+/* 사이드 이미지 설정 */
+.news {
+
+}
+.news ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px;
+}
+.news li {
+    background-color: azure;
+    border-radius: 20px;
+    text-indent: -9999px;
+    
+
+}
+.news li:nth-child(1) {
+    background-image: url(../img/news01.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 254px;
+    height: 353px;
+}
+.news li:nth-child(2) {
+    width: 254px;
+    height: 169px;
+}
+.news li:nth-child(3) {
+    width: 254px;
+    height: 169px;
+}
+/* 주요 고객사 설정 */
+.customer {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.cus-wrap {
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 주요 고객사 글자 설정 */
+.cus-txt {
+    color: #fff;
+}
+.cus-txt ul {
+    display: flex;
+    justify-content: center;
+
+}
+.cus-txt li {
+    margin-left: 100px;
+}
+.cus-txt li:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+}
+.cus-txt li:nth-child(2) {
+    font-size: 16px;
+}
+/* 주요 고객사 사진 설정 */
+.cus-img {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+.cus-img ul {
+    display: flex;
+}
+.cus-img li {
+    width: 360px;
+    height: 142px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.cus-img li:nth-child(1) {
+    background-image: url(../img/c01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.cus-img li:nth-child(2) {
+    background-image: url(../img/c02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+.cus-img li:nth-child(3) {
+background-image: url(../img/c03.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+.cus-img li:nth-child(4) {
+    background-image: url(../img/c04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.cus-img li:nth-child(5) {
+background-image: url(../img/c05.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+.cus-img li:nth-child(6) {
+    background-image: url(../img/c06.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* footer 설정 */
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 50vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.f-wrap {
+    width: 80%;
+    height: 40vh;
+}
+
+/* f1 설정 */
+.f1 {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #fff;
+
+}
+.f1 ul{
+    display: flex;
+
+}
+.f1 li {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.f1-1 li {
+    margin-right: 60px;
+}
+.f1-2 li {
+    margin-left: 60px;
+}
+/* f2 설정 */
+.f2 {
+    
+}
+.f2 ul {}
+.f2 li {
+    margin-top: 10px;
+}
