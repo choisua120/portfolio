@@ -30,22 +30,15 @@ section {
     overflow: hidden;
 }
 .main h1 {
-    font-family: 'Old Standard TT', serif;
-    font-size: 130px;
-    opacity: 60%;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: -400px;
-    margin-top: 380px;
+    background-image: url(../img/main01.png);
+    width: 100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size:contain ;
+    margin-left: 30px;
 }
 
 .main>h2 {
-    font-family: 'Old Standard TT', serif;
-    font-size: 130px;
-    opacity: 60%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -64,6 +57,53 @@ section {
     position: absolute;
     right: 20%;
     top: 50%;
+}
+/* btn 설정 */
+.btn a, .btn span {
+	display : inline-block;
+	transition : all .4s;
+	box-sizing : border-box;
+}
+
+.btn {
+    position: relative;
+    width: 50px;
+    height: 44px;
+    top: 0;
+    right: 0;
+}
+
+.btn  span {
+    width : 100%;
+    height: 4px;
+    background-color: #FFF;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.btn  span:nth-child(1) {
+    top: 0;
+}
+.btn  span:nth-child(2) {
+    top: 20px;
+}
+
+.btn  span:nth-child(3) {
+    bottom: 0;
+}
+.btn.active span:nth-child(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+}
+
+.btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.btn.active span:nth-child(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
 }
 /* nav 설정 */
 nav {
@@ -113,4 +153,27 @@ nav li {
 }
 .dailylife article:nth-child(2) h2 {
     
+}
+/* runway 설정 */
+.runway {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.r-video {
+    width: 70%;
+    height: 100vh;
+    background-color: bisque;
+}
+.r-txt {
+    width: 30%;
+    height: 100vh;
+    background-color: #BD1B1D;
+}
+.r-txt span {}
+.r-txt em {
+    font-size: 50px;
+    transform: rotate(90deg);
+    font-style: normal;
 }
