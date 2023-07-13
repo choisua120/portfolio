@@ -1,0 +1,41 @@
+html - 
+header - logo/ nav
+
+nav - ul>li*3
+section*7
+
+1.section>article*1
+2.section>article*3>div*2
+3.section>article*2
+3_1.articel>ul>li*5
+3_2.article>div*3
+4.section>artilce*1>ul>li*3
+5.section>article*2
+6.section>artilce*1>ul>li*3
+7.section= footer
+
+css-
+
+
+header -가로 100% / fixed (display:flex)
+-로고 ,navi 가로정렬
+
+all section   - 가로 100% / 세로 100vh 
+1.section -display:flex(aline-item:center: 위아래 가운데정렬)
+1_1article - 글씨내용설정
+2.section - display:flex
+3.section -dispaly:flex 
+3_1.article 10:90
+3_2 article:nth-child(2) : display:flex 5:5 div 한개 position
+
+4.section - ul - display :flex 
+
+5.seciton- display:flex 
+
+6.section -ul 기본설정
+7.footer
+
+
+
+
+
