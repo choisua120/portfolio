@@ -1,4 +1,6 @@
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +19,15 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: gray;
     width: 100%;
     height: 10vh;
     z-index: 10;
     display: flex;
     align-items: center;
+    border-bottom: #fff solid 1px;
 }
 /** nav 설정 */
-nav {;
+nav {
     display: flex;
     align-items: center;
 }
@@ -34,6 +36,8 @@ nav ul {
 }
 nav ul li {
     margin-left: 60px;
+    color: #fff;
+    font-family: 'Play', sans-serif;
 }
 /** logo 설정 */
 nav h1 {
@@ -47,18 +51,6 @@ section {
     width: 100%;
     height: 100vh;
 }
-section:nth-child(1) {
-    background-color: #ddd;
-}
-section:nth-child(2) {
-    background-color: #ccc;
-}
-section:nth-child(3) {
-    background-color: #bbb;
-}
-section:nth-child(4) {
-    background-color: #aaa;
-}
 section:nth-child(5) {
     background-color: #999;
 }
@@ -69,12 +61,26 @@ section:nth-child(6) {
 .box1 {
     display: flex;
     align-items: center;
+    background-image: url(../img/hero.jpg);
 }
+/** box1 글자 설정 */
 .box1 article {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
     margin-left: 10%;
+}
+.box1 article h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 5px;
+}
+.box1 article em {
+    color: #FFF;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 2px;
 }
 /* box2 설정 */
 .box2 {
@@ -105,6 +111,13 @@ section:nth-child(6) {
     background-color: #666;
     width: 33.333%;
 }
+/** box2 사진 설정 */
+.box2 article img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    object-position: center;
+}
 /* box3 설정 */
 .box3 {
     display: flex;
@@ -112,31 +125,57 @@ section:nth-child(6) {
 .box3 article:nth-child(1) {
     width: 10%;
     height: 100%;
-    background-color: #fff;
+    background-color: gray;
 }
 .box3 article:nth-child(2) {
     width: 90%;
     height: 100%;
-    background-color: #999;
     position: relative;
     display: flex;
 }
 .box3 article:nth-child(2) div:nth-child(1) {
-    background-color: antiquewhite;
-    width: 45%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
 }
 .box3 article:nth-child(2) div:nth-child(2) {
-    background-color: thistle;
-    width: 55%;
+    width: 50%;
+}
+.box3 article:nth-child(2) div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    object-position: center;
 }
 .box3 article:nth-child(2) div:nth-child(3) {
     position: absolute;
     background-color: beige;
-    width: 45%;
+    width: 600px;
     height: 150px;
-    top: 50%;
-    left: 100px;
+    top: 60%;
+    left: 150px;
 }
+/** box3 글자 설정 */
+.box3 .txt03 ul li {
+    margin-top: 25px;
+}
+.box3 .txt03 ul li:nth-child(1) {
+    color: #000;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+}
+.box3 .txt03 ul li:nth-child(2){
+    color: #000;
+    font-size: 26px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.box3 .txt03 ul li:nth-child(3){
+    color: #555555;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* box4 설정 */
 .box4 {
 
@@ -153,7 +192,6 @@ section:nth-child(6) {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* 얘는 왜 저스티파이 컨텐츠가 안될까요 */
 }
 .box4 article ul li {
     background-color: #fff;
@@ -171,10 +209,12 @@ section:nth-child(6) {
     width: 50%;
 }
 .box5 article:nth-child(1) {
-    background-color: yellow;
+    background-image: url(../img/box5.jpg);
+    background-position: left center;
+    background-size: cover;
 }
 .box5 article:nth-child(2) {
-    background-color: yellowgreen;
+    background-color: #043673;
 }
 /* box6 설정 */
 .box6 {}
@@ -191,6 +231,10 @@ section:nth-child(6) {
 .box6 article ul li{
     background-color: #fff;
 }
+/** box6 글자 설정 */
+.txt06 {
+}
+.txt06
 /* footer설정 */
 footer {
     background-color: #000;
