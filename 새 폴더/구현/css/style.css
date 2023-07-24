@@ -152,7 +152,7 @@ section {
 .box3 article:nth-child(1) {
     width: 10%;
     height: 100%;
-    background-color: gray;
+    border-right: #ccc dashed 5px;
 }
 .box3 article:nth-child(2) {
     width: 90%;
@@ -234,7 +234,9 @@ section {
     height: 100%;
     margin-left: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .box4 article ul {
     width: 100%;
@@ -249,14 +251,13 @@ section {
 .box4 article ul li:nth-child(1) {}
 .box4 article ul li:nth-child(2) {}
 .box4 article ul li:nth-child(3) {}
-/** box4 사진 설정 */
-.con04 li {}
-.con04 figure {
-    width: 100%;
-    height: 65%;
-    background-color: #043673;
+/** box4 글자 설정 */
+.box4 article h1 {
+    font-size: 42px;
+    margin-bottom: 32px;
+    font-family: 'Play', sans-serif;
+    
 }
-.con04 img {}
 .con04 div {
     width: 100%;
     height: 35%;
@@ -280,6 +281,24 @@ section {
     font-family: 'Noto Sans KR', sans-serif;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 13px;
+}
+/** box4 사진 설정 */
+.con04 li {}
+.con04 figure {
+    width: 100%;
+    height: 65%;
+    background-color: #043673;
+}
+.con04 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    object-position: center;
+    transform: scale(1)
+}
+.con04 figure img:hover {
+
 }
 /* box5 설정 */
 .box5 {
@@ -289,26 +308,30 @@ section {
     width: 50%;
 }
 .box5 article:nth-child(1) {
-    background-image: url(../img/box5.jpg);
-    background-position: left center;
-    background-size: cover;
+    overflow: hidden;
 }
-
+.box5 article:nth-child(2) {
+    background-color: #043673;
+}
 /** box5 글자 설정 */
 .txt05 {
-    background-color: #043673;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .txt05 h1 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
     display: block;
     font-size: 31px;
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .txt05 p {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 16px;
     color: #AAAAAA;
     font-family: 'Noto Sans KR', sans-serif;
@@ -347,13 +370,14 @@ section {
     display: block;
     color: #222222;
     font-size: 42px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Play','NotoSansKR' sans-serif;
     margin: 32px;
 }
 .txt06 {
 
 }
 .txt06 li {
+    width: 1000px;
 }
 .txt06 a {
     display: flex;
@@ -384,7 +408,9 @@ section {
 }
 .txt-info {
     padding: 20px;
-
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .txt-info span {
     color: #222222;
@@ -396,9 +422,47 @@ section {
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-/* footer설정 */
+/* footer 설정 */
 footer {
     background-color: #000;
+    color: #fff;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.f-wrap {
+    width: 80%;
+    height: 40vh;
+}
+
+/* f1 설정 */
+.f1 {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #fff;
+
+}
+.f1 ul{
+    display: flex;
+
+}
+.f1 li {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.f1-1 li {
+    margin-right: 60px;
+}
+.f1-2 li {
+    margin-left: 60px;
+}
+/* f2 설정 */
+.f2 {
+    
+}
+.f2 ul {}
+.f2 li {
+    margin-top: 10px;
 }
