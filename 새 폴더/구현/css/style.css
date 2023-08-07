@@ -422,6 +422,10 @@ section {
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
 }
+/*** txt06 hover 설정 */
+.txt06 li:hover {
+    color: #043673;
+}
 /* footer 설정 */
 footer {
     background-color: #000;
